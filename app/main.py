@@ -34,8 +34,8 @@ class Dog(Animal):
     def bring_slippers(self: str) -> None:
         print("The slippers delivered!")
 
-    def feed_animals(animals: list[Animal]) -> int:
+    def feed_animals(self: list[Animal]) -> int:
         total__food_points = 0
-        for animal in animals:
+        for animal in self:
             total__food_points += animal.feed()
         return total__food_points
