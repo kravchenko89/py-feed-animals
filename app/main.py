@@ -32,10 +32,10 @@ class Dog(Animal):
         super().__init__(name, appetite=7, is_hungry=is_hungry)
 
     def bring_slippers(self: str) -> None:
-        print("The slippers delivered")
+        print("The slippers delivered!")
 
-    def feed_animals(self) -> int:
+    def feed_animals(animals: list[Animal]) -> int:
         total__food_points = 0
-        for animal in self.appetite:
+        for animal in animals:
             total__food_points += animal.feed()
         return total__food_points
