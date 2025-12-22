@@ -1,14 +1,15 @@
 class Animal:
 
-    def __init__(self, name: str, appetite: int, is_hungry: bool = True) -> None:
+    def __init__(self, name: str, appetite: int,
+                 is_hungry: bool = True) -> None:
         self.name = name
         self.appetite = appetite
         self.is_hungry = is_hungry
 
-        def print_name(self) -> None:
+        def print_name() -> None:
             print(f"Hello, I'm {self.name}")
 
-        def feed(self):
+        def feed():
             print(f"Eating {self.appetite} food points...")
             if self.is_hungry:
                 print(f"Eating {self.appetite} food points....")
