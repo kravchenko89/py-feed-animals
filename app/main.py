@@ -1,1 +1,39 @@
-#  write your code here
+class Animal:
+
+    def __init__(self, name, appetite, is_hungry = True) -> None:
+        self.name = name
+        self.appetite = appetite
+        self.is_hungry = is_hungry
+
+        def print_name (self):
+            print(f"Hello, I'm {self.name}")
+
+        def feed(self):
+            print(f"Eating {self.appetite} food points...")
+            if self.is_hungry:
+                print(f"Eating {self.appetite} food points....")
+                self.is_hungry = False
+                return self.appetite
+            return 0
+
+
+class Cat(Animal):
+    def __init__(self, name, is_hungry = True) -> None:
+        super().__init__(name, appetite=3, is_hungry=is_hungry)
+
+    def catch_mouse(self):
+        print(f"The hunt began!")
+
+class Dog(Animal):
+    def __init__(self, name, is_hungry=True) -> None:
+        super().__init__(name, appetite=7, is_hungry=is_hungry)
+
+    def bring_slippers(self):
+        print(f"The slippers delivered")
+
+
+    def feed_animals(salf):
+        total__food_points = 0
+        for animal in salf.appetite:
+            total__food_points += animal.feed()
+        return total__food_points
