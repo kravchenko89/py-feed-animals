@@ -6,16 +6,16 @@ class Animal:
         self.appetite = appetite
         self.is_hungry = is_hungry
 
-        def print_name(self: str) -> None:
-            print(f"Hello, I'm {self.name}")
+    def print_name(self: str) -> None:
+        print(f"Hello, I'm {self.name}")
 
-        def feed(self: int) -> int:
-            print(f"Eating {self.appetite} food points...")
-            if self.is_hungry:
-                print(f"Eating {self.appetite} food points....")
-                self.is_hungry = False
-                return self.appetite
-            return 0
+    def feed(self: int) -> int:
+        print(f"Eating {self.appetite} food points...")
+        if self.is_hungry:
+            print(f"Eating {self.appetite} food points....")
+            self.is_hungry = False
+            return self.appetite
+        return 0
 
 
 class Cat(Animal):
