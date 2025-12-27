@@ -14,12 +14,12 @@ class Animal:
         print(f"Hello, I'm {name}")
 
     @staticmethod
-    def feed(appetite: int, is_hungry: bool) -> int:
-        if is_hungry:
-            print(f"Eating {appetite} food points...")
-            is_hungry = False
-            return appetite
-        return 0
+    def feed(self) -> int:
+        if not self.is_hungry:
+            return 0
+        print(f"Eating {self.appetite} food points...")
+        self.is_hungry = False
+        return self.appetite
 
 
 class Cat(Animal):
