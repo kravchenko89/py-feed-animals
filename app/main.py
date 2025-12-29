@@ -9,9 +9,9 @@ class Animal:
         self.appetite = appetite
         self.is_hungry = is_hungry
 
-    @staticmethod
-    def print_name(name: str) -> None:
-        print(f"Hello, I'm {name}")
+
+    def print_name(self) -> None:
+        print(f"Hello, I'm {self.name}")
 
     def feed(self) -> int:
         if not self.is_hungry:
