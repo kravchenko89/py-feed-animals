@@ -13,7 +13,6 @@ class Animal:
     def print_name(name: str) -> None:
         print(f"Hello, I'm {name}")
 
-    @staticmethod
     def feed(self) -> int:
         if not self.is_hungry:
             return 0
